@@ -52,7 +52,8 @@ See the example directory for a complete example of how to use this module.
 
 ```hcl
 module "hugo_blog" {
-  source = "./modules/blog"
+  source  = "vlkyrylenko/hugo/aws"
+  version = "1.0.0"
 
   domain_name = "example.com"
   providers = {

@@ -1,5 +1,6 @@
 module "hugo_blog" {
-  source = "./modules/blog"
+  source  = "vlkyrylenko/hugo/aws"
+  version = "1.0.0"
 
   domain_name = var.domain_name
   providers = {
